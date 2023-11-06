@@ -1,0 +1,56 @@
+{
+    "sedan": [
+        {
+            "marca": "Toyota",
+            "modelo": "Camry",
+            "ano": 2022,
+            "cor": "Prata",
+            "preco_por_dia": 80.0,
+            "disponivel": 10
+        },
+        {
+            "marca": "Honda",
+            "modelo": "Civic",
+            "ano": 2021,
+            "cor": "Azul",
+            "preco_por_dia": 75.0,
+            "disponivel": 10
+        }
+    ],
+    "suv": [
+        {
+            "marca": "Ford",
+            "modelo": "Escape",
+            "ano": 2023,
+            "cor": "Preto",
+            "preco_por_dia": 90.0,
+            "disponivel": 10
+        },
+        {
+            "marca": "Chevrolet",
+            "modelo": "Trax",
+            "ano": 2022,
+            "cor": "Branco",
+            "preco_por_dia": 85.0,
+            "disponivel": 10
+        }
+    ],
+    "compacto": [
+        {
+            "marca": "Nissan",
+            "modelo": "Versa",
+            "ano": 2021,
+            "cor": "Vermelho",
+            "preco_por_dia": 70.0,
+            "disponivel": 10
+        },
+        {
+            "marca": "Hyundai",
+            "modelo": "Accent",
+            "ano": 2022,
+            "cor": "Prata",
+            "preco_por_dia": 65.0,
+            "disponivel": 10
+        }
+    ]
+}
