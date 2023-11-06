@@ -1,5 +1,9 @@
 import json
+import os
+
 def exibir_tabela_carros(carros):
+    os.system("cls")
+    print("================================ LOCADORA DE VEICULOS ================================")
     print("{:<10} {:<10} {:<15} {:<10} {:<10} {:<15} {:<10}".format("Categoria", "Marca", "Modelo", "Ano", "Cor", "Preço/Dia", "Disponível"))
     for categoria, carros_categoria in carros.items():
         for carro in carros_categoria:
@@ -12,11 +16,20 @@ def carregar_carros():
     return abrir_carros
 
 def menu():
-    x= carregar_carros()
-    print(exibir_tabela_carros(x)) 
-    op = input('Escolha a caegoria do carro:')
+    carros= carregar_carros()
+    while True:
+        print(exibir_tabela_carros(carros)) 
+        op = input('\n(1) Locar veiculo\n(2) Devolver veiculo\n:')
+        
+        if(op=='1'):
+            alugar_carro(carros)
+        elif(op=='2'):
+            devolver_carro(carros)
+def alugar_carro(carros):
     dias = int(input('Quantidade de dias de aluguel:'))
     forma_pgto = input('Forma de pagamento:\n(1) Crédito\n(2) Débito\n(3) Pix')
-def alugar_carro(x):
-def atualizar_carro(x):
-    
+
+def devolver_carro(carros):
+
+if __name__=='__main__':
+    menu()
