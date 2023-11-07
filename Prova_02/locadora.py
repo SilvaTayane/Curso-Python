@@ -5,11 +5,9 @@ import os
 def exibir_tabela_carros(carros):
     os.system("cls")
     print("================================ LOCADORA DE VEICULOS ================================")
-    print("{:<10} {:<10} {:<15} {:<10} {:<10} {:<15} {:<10}".format("Categoria", "Marca", "Modelo", "Ano", "Cor", "Preço/Dia", "Disponível"))
-    for categoria, carros_categoria in carros.items():
-        for carro in carros_categoria:
-            print("{:<10} {:<10} {:<15} {:<10} {:<10} R${:<14.2f} {:<10}".format(categoria, carro["marca"], carro["modelo"], carro["ano"], carro["cor"], carro["preco_por_dia"],carro["disponivel"]))
-
+    print(f"{'Código':<10}{'Produto':<25}{'Preço':<15}{'Estoque':<15}{'Vendas':<15}")
+        for codigo, lista in estoque.items():
+            print(f"{codigo:<10}{lista[0]:<25}{lista[1]:<15}{lista[2]:<15}{lista[3]:<15}")
  
    
 #Carregar arquivo carros
