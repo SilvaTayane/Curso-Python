@@ -19,17 +19,18 @@ def menu():
     carros= carregar_carros()
     while True:
         print(exibir_tabela_carros(carros)) 
-        op = input('\n(1) Locar veiculo\n(2) Devolver veiculo\n:')
+        op = input('\n(1) Locação de Veículos\n(2) Visualizar lista de clientes\n:')
         
         if(op=='1'):
             alugar_carro(carros)
         elif(op=='2'):
-            devolver_carro(carros)
-def alugar_carro(carros):
-    dias = int(input('Quantidade de dias de aluguel:'))
-    forma_pgto = input('Forma de pagamento:\n(1) Crédito\n(2) Débito\n(3) Pix')
+            lista_de_clientes(carros)
 
-def devolver_carro(carros):
+            
+def alugar_carro(carros):
+    op = input("(1) Alugar veículo\n(2) Devolver um veículo alugado\n")
+
+def lista_de_clientes(carros):
 
 if __name__=='__main__':
     menu()
