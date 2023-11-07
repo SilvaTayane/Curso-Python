@@ -1,56 +1,9 @@
+
 {
-    "sedan": [
-        {
-            "marca": "Toyota",
-            "modelo": "Camry",
-            "ano": 2022,
-            "cor": "Prata",
-            "preco_por_dia": 80.0,
-            "disponivel": 10
-        },
-        {
-            "marca": "Honda",
-            "modelo": "Civic",
-            "ano": 2021,
-            "cor": "Azul",
-            "preco_por_dia": 75.0,
-            "disponivel": 10
-        }
-    ],
-    "suv": [
-        {
-            "marca": "Ford",
-            "modelo": "Escape",
-            "ano": 2023,
-            "cor": "Preto",
-            "preco_por_dia": 90.0,
-            "disponivel": 10
-        },
-        {
-            "marca": "Chevrolet",
-            "modelo": "Trax",
-            "ano": 2022,
-            "cor": "Branco",
-            "preco_por_dia": 85.0,
-            "disponivel": 10
-        }
-    ],
-    "compacto": [
-        {
-            "marca": "Nissan",
-            "modelo": "Versa",
-            "ano": 2021,
-            "cor": "Vermelho",
-            "preco_por_dia": 70.0,
-            "disponivel": 10
-        },
-        {
-            "marca": "Hyundai",
-            "modelo": "Accent",
-            "ano": 2022,
-            "cor": "Prata",
-            "preco_por_dia": 65.0,
-            "disponivel": 10
-        }
-    ]
+    "1": ["Toyota","Camry",2022,"Prata",80.0,10],
+    "2": ["Honda","Civic",2021,"Azul",75.0,10],
+    "3": ["Ford","Escape",2023,"Preto",90.0,10],
+    "4": ["Chevrolet","Trax",2022,"Branco",85.0,10],
+    "5": ["Nissan","Versa",2021,"Vermelho",70.0,10],
+    "6": ["Hyundai","Accent",2022,"Prata",65.0,10]
 }
