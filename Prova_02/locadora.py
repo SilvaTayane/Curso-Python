@@ -1,7 +1,7 @@
 import json
 import os
 
-
+#Imprimir tabela de carros
 def exibir_tabela_carros(carros):
     os.system("cls")
     print("================================ LOCADORA DE VEICULOS ================================")
@@ -10,8 +10,9 @@ def exibir_tabela_carros(carros):
         for carro in carros_categoria:
             print("{:<10} {:<10} {:<15} {:<10} {:<10} R${:<14.2f} {:<10}".format(categoria, carro["marca"], carro["modelo"], carro["ano"], carro["cor"], carro["preco_por_dia"],carro["disponivel"]))
 
-
-
+ 
+   
+#Carregar arquivo carros
 def carregar_arquivo_carros():
     with open('carros.json','r') as f:
         texto = f.read()
@@ -19,6 +20,22 @@ def carregar_arquivo_carros():
     return abrir_carros
 
 
+
+def alugar_carro(carros):
+    op = input("(1) Alugar veículo\n(2) Devolver um veículo alugado\n")
+    if op == '1':
+        #Cadastrar usuario a alugar carro
+    elif op == '2':
+        #devolver carro alugado pelo cliente
+
+
+
+#imprimir lista de clientes
+def lista_de_clientes(carros):
+
+
+
+#Menu
 def menu():
     carros= carregar_arquivo_carros()
     while True:
@@ -30,17 +47,7 @@ def menu():
         elif(op=='2'):
             lista_de_clientes(carros)
 
-            
-def alugar_carro(carros):
-    op = input("(1) Alugar veículo\n(2) Devolver um veículo alugado\n")
-    if op == '1':
-        #Cadastrar usuario a alugar carro
-    elif op == '2':
-        #devolver carro alugado pelo cliente
-
-
-def lista_de_clientes(carros):
-    #imprimir lista de clientes
+        
 
 
 if __name__=='__main__':
