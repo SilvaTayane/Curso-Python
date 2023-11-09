@@ -98,10 +98,9 @@ def alugar_carro(carros, codigo, dias):
     formato = '%d/%m/%Y'
     data_entrega = data.strftime(formato)
     print(''.center(55), 'CONTRATO DE LOCAÇÃO\n')
-    print('{} portador do CPF {} e da CNH {} está alugando o veiculo {}'.format(nome_completo, cpf, cnh,
-                                                                                carros[codigo][0]))
+    print('{} portador do CPF {} e da CNH {} \nestá alugando o veiculo {}'.format(nome_completo, cpf, cnh, carros[codigo][0]))
     print('no periodo de {} dias ,que ficará no valor de R${}'.format(dias, conta))
-    print('e devolução do veiculo ficará para a data {}.'.format(data_entrega))
+    print('e a devolução do veiculo ficará para a data {}.'.format(data_entrega))
     print('-----ATENCAO: EM CASO DE ATRASO HAVERA COBRANÇA DE TAXA DE 100R$ AO DIA-----')
     print('Locação com sucesso!\n')
     print('================================================================\n\n')
