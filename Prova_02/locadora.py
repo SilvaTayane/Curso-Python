@@ -60,7 +60,7 @@ def reservar_carro(carros):
     reservar um carro pelo codigo.
     ou retornar ao inicio'''
 
-    codigo = input('Qual modelo de carro:')
+    codigo = input('Qual o código do carro:')
     dias = int(input('Quantidade de dias de aluguel:'))
     OpcaoDois = input('\n(1) Confirmar contrato'
                  '\n(2) Mudar o veiculo'
